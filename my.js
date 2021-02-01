@@ -1,16 +1,16 @@
 let nav_bar =  document.getElementById("nav-side");
 
 let link = [
-    ['Home'],
-    ['Profile'],
-    ['Setting'],
-    ['Logout']
+    ['Home','#'],
+    ['Profile','#'],
+    ['Setting','#'],
+    ['Logout','#']
 ]
 
 console.log(link);
 
 link.forEach((item) => {
-    nav_bar.innerHTML += '<a href="">'+ item[0] + '</a>' + '<hr>';
+    nav_bar.innerHTML += '<a href="'+item[1] +'">'+ item[0] + '</a>' + '<hr>';
 });
 
 
@@ -40,7 +40,7 @@ function swapCase(kata) {
         }
     });
 
-    console.log(kalimatBaru);
+    return kalimatBaru;
 }
 
-swapCase(strKata);
+console.log(swapCase(strKata));
