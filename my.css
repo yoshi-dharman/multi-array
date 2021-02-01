@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-side{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 60px 40px 0 30px;
+    background-color: mediumpurple;
+}
+
+.nav-side a{
+    text-decoration: none;
+    color: midnightblue;
+    padding: 5px;
+    /* font-weight: bold; */
+}
+
+hr{
+    height: 2px;
+    width: 100%;
+    border-width: 0;
+    color: red;
+    background-color: red;
+}
